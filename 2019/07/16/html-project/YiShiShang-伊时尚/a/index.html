@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>我的网站</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="order by dede58.com"/>
+<link rel="stylesheet" href="../skin/css/bootstrap.css"/>
+<link rel="stylesheet" href="../skin/css/font-awesome.css"/>
+<link rel="stylesheet" href="../skin/css/settings.css"/>
+<link rel="stylesheet" href="../skin/css/owl.carousel.css"/>
+<link rel="stylesheet" href="../skin/css/featherlight.css"/>
+<link rel="stylesheet" href="../skin/css/bootstrap-select.min.css"/>
+<link rel="stylesheet" href="../skin/css/animate.css"/>
+<link rel="stylesheet" href="../skin/css/style.css"/>
+<link rel="stylesheet" href="../skin/css/responsive.css"/>
+<link rel="stylesheet" href="../skin/css/tk.css"/>
+<script src="../skin/js/jquery-1.11.3.min.js"></script>
+<script src="../skin/js/bootstrap.js"></script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+<script src="../skin/js/html5.js"></script>
+<script src="../skin/js/respond.min.js"></script>
+<style>
+	article,aside,dialog,footer,header,section,nav,figure,menu{display:block;padding:0;margin:0;}
+    #section_add{
+        width: 500px;
+        height: 500px;
+        background-color: #206D05 !important;
+    }
+</style>
+<link rel="stylesheet" href="../skin/css/ie.css" type="text/css" media="screen"/>
+<![endif]-->
+
+<!--[if lte IE 9]>
+<script src="../skin/js/jquery.placeholder.js"></script>
+<script>
+jQuery(document).ready(function($){
+	$('input, textarea').placeholder();
+});
+</script>
+<script type="text/javascript" src="../skin/js/pie.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('.indexci img').each(function() {
+		PIE.attach(this);  
+	});  
+});
+</script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="../skin/js/selectivizr.js"></script>
+  <script type="text/javascript" src="../skin/js/excanvas.compiled.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+$(function() {
+	//$("#navigation #nav_0").addClass("active");
+	$('.navbar-nav .menu1').click(function() {
+		if($(window).width()>1024){
+			window.location.href=$(this).attr("href");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<!--[if lt IE 8]>
+	<div class="lt-ie8-bg">
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
+		<p>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<p class="browsehappy">对不起，您正在使用的是 <strong>过时</strong> 的浏览器.</p>
+		<p>请升级您的浏览器（IE8+，或者是火狐、谷歌、Opera、Safari等现代浏览器），以改进您的用户体验！</p>
+	</div>
+	<style>
+	.lt-ie8-bg{z-index:11111;position:absolute;top:0;left:0;right:0;bottom:0;background-color:#333;color:#999;padding:100px 20px;text-align:center;font-size:26px}
+	.lt-ie8-bg a{color:#f5f5f5;border-bottom:2px solid #fff}
+	.lt-ie8-bg a:hover{text-decoration:none}
+	#page-body-wrap{display:none;}
+	</style>
+<![endif]-->
+
+<div id="page-body-wrap">
+<nav id="main-nav" class="navbar navbar-fixed-top affix-top wow slideInDown">
+  <div class="container">
+    <div class="navbar-header"> <a class="navbar-toggle collapsed mmenu-btn" href="#mmenu"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="navbar-brand" href="/"><img src="../skin/images/logo.png" alt="Logo"/></a> </div>
+    <div id="navbar" class="collapse navbar-collapse-x pull-right">
+      <ul class="nav navbar-nav">
+        <li class="Lev1 dropdown" id="nav_0"> <a class="menu1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="../a/index.html">网站首页</a> </li>
+        <li class="Lev1 dropdown" id="nav_4"> <a href="../a/gongsijianjie/index.html" class="menu1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们 <span class="caret"
+          > </span> </a>
+          <ul class="dropdown-menu sub-menu2"
+            > 
+            
+            
+            <li class="Lev2"> <a href="../a/gongsijianjie/index.html" class="menu2">公司简介</a> </li>
+            
+            <li class="Lev2"> <a href="../a/pinpaiqiyuan/index.html" class="menu2">品牌起源</a> </li>
+            
+            <li class="Lev2"> <a href="../a/rongyuzizhi/index.html" class="menu2">荣誉资质</a> </li>
+            
+          </ul>
+        </li><li class="Lev1 dropdown" id="nav_4"> <a href="../a/chanpinxilie/index.html" class="menu1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品系列 <span class="caret"
+          > </span> </a>
+          <ul class="dropdown-menu sub-menu2"
+            > 
+            
+            
+            <li class="Lev2"> <a href="../a/chanpinxilie/fenleiyi/index.html" class="menu2">手袋系列</a> </li>
+            
+            <li class="Lev2"> <a href="../a/chanpinxilie/fenleier/index.html" class="menu2">钱夹系列</a> </li>
+            
+            <li class="Lev2"> <a href="../a/chanpinxilie/fenleisan/index.html" class="menu2">配饰系列</a> </li>
+            
+          </ul>
+        </li><li class="Lev1 dropdown" id="nav_4"> <a href="../a/dianpuxingxiang/xingxiangdian/index.html" class="menu1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">店铺形象 <span class="caret"
+          > </span> </a>
+          <ul class="dropdown-menu sub-menu2"
+            > 
+            
+            ....
+            <li class="Lev2"> <a href="../a/dianpuxingxiang/xingxiangdian/index.html" class="menu2">形象店</a> </li>
+            
+            <li class="Lev2"> <a href="../a/dianpuxingxiang/dianpuwangluo/index.html" class="menu2">店铺网络</a> </li>
+            
+          </ul>
+        </li><li class="Lev1 dropdown" id="nav_4"> <a href="../a/shishangzixun/index.html" class="menu1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">时尚资讯 <span style="display:none"
+          > </span> </a>
+          <ul style="display:none"
+            > 
+            
+            
+          </ul>
+        </li><li class="Lev1 dropdown" id="nav_4"> <a href="../a/zhaoshangjiameng/jiamengxize/index.html" class="menu1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">招商加盟 <span class="caret"
+          > </span> </a>
+          <ul class="dropdown-menu sub-menu2"
+            > 
+            
+            
+            <li class="Lev2"> <a href="../a/jiamengxize/index.html" class="menu2">加盟细则</a> </li>
+            
+            <li class="Lev2"> <a href="../a/jiamengliucheng/index.html" class="menu2">加盟流程</a> </li>
+            
+            <li class="Lev2"> <a href="../a/huibaoyoushi/index.html" class="menu2">回报优势</a> </li>
+            
+          </ul>
+        </li><li class="Lev1 dropdown" id="nav_4"> <a href="../a/lianxiwomen/index.html" class="menu1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们 <span style="display:none"
+          > </span> </a>
+          <ul style="display:none"
+            > 
+            
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="slider-r" id="index-slider">
+  <div id="mainslider">
+    <div class="slider">
+      <div class="fullscreen-container">
+        <div class="fullscreenbanner">
+          <ul>
+            <li data-transition="random" data-slotamount="0" > <img src="../uploads/180105/1-1P10515160M25.jpg" alt="banner1" />
+              <div class="caption sfb" data-x="center" data-y="center" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
+                <div class="slider-text text-center">
+                  <h1 class="text-center">零风险 零加盟费</h1>
+                  <h2 class="text-center">EIVSON 伊时尚时尚女装</h2>
+                  <div class="slider-btn"><a class="btn btn-donate">查看更多</a></div>
+                </div>
+              </div>
+            </li>
+<li data-transition="random" data-slotamount="0" > <img src="../uploads/180105/1-1P10515154LO.jpg" alt="banner1" />
+              <div class="caption sfb" data-x="center" data-y="center" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
+                <div class="slider-text text-center">
+                  <h1 class="text-center">简洁、优雅、时尚</h1>
+                  <h2 class="text-center">展现都市女性的美丽与自信</h2>
+                  <div class="slider-btn"><a class="btn btn-donate">查看更多</a></div>
+                </div>
+              </div>
+            </li>
+<li data-transition="random" data-slotamount="0" > <img src="../uploads/180105/1-1P105151255233.jpg" alt="banner1" />
+              <div class="caption sfb" data-x="center" data-y="center" data-speed="1000" data-start="1000" data-easing="easeOutExpo">
+                <div class="slider-text text-center">
+                  <h1 class="text-center">自信、知性、自由、追求生活品质</h1>
+                  <h2 class="text-center">全程开店指导，0风险0库存，免费道具支持，专业营销团队</h2>
+                  <div class="slider-btn"><a class="btn btn-donate">查看更多</a></div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="section no-padding no-margin" id="section_add">
+  <div class="container wow fadeIn"> <h2 class="text-center brand-title">举手投足间散发都市女性卓越风姿</h2>
+      <hr style="color: #398439">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 ibrand-img"> <img class="img-responsive " src="../uploads/180105/1-1P10515392V31.jpg" alt="Brand"/> </div>
+      <div class="col-md-6 col-sm-6 ibrand-desc">
+        <div class="brand-content"> <h1>品牌定位</h1>
+            <br>
+            <br>
+          <div class="brand-location">
+            <div class="brand-info">
+              <ul>
+                <li>
+                  <dl>
+                    <dt>伊菲尚是一种生活态度</dt>
+                    <dd class="brand-desc"> 自信、知性、自由、追求生活品质。品牌采用特价连锁专卖经营策略，加盟店加入连锁系统时需使用伊菲尚的商标，店铺形象，服务方式等，并严格按照全国统一市场零售价格在公司授... </dd>
+                  </dl>
+                </li>
+<li>
+                  <dl>
+                    <dt>“伊菲尚”品牌女装</dt>
+                    <dd class="brand-desc"> 定位于25-39岁的都市知识女性。追求简洁、优雅、时尚的服装设计，别致，考究的面料，流畅的工艺线条。 伊菲尚女装款式简洁大方，色彩丰富。巧妙的将艺术创作与着装时尚相结合，... </dd>
+                  </dl>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <br>
+    <br>
+<section class="section no-padding" id="index-join">
+  <div id="under-spotlight" class="wow fadeIn">
+    <div class="item">
+      <div class="container join-container">
+        <div class="spot-img"> </div>
+        <div class="spot-text text-center">
+          <div class="spot-heading">
+
+            <h1>女装加盟店如此火爆的秘密是？</h1>
+            <h2>伊菲尚招商合作政策，我们的产品优势如下</h2>
+          </div>
+          <div class="spot-details">
+            <p>1、<b>无风险的经营模式</b>：零库存，服装一个月内无条件退换货</p>
+            <p>2、<b>利润最大化</b>：利润最大化</p>
+            <p>3、<b>大规模的生产能力</b>：八千平方的生产基地，500名熟手工人</p>
+            <p>4、<b>良好的激励制度</b>：厂家的扶持政策——为年终加盟商提供返点扶持</p>
+            <p>5、<b>差异化的市场运营</b>：每月上百款新品推出，紧跟欧韩潮流</p>
+            <p>6、<b>经验丰富的设计团队</b>：几十名专业设计师，10年以上的服装设计经验</p>
+            <p>7、<b>可靠的产品质量</b>：服装面料选材考究，裁剪工艺流畅</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="index-news">
+  <div class="container wow slideInDown">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center color-title"><a href="../a/shishangzixun/index.html">时尚资讯</a> </h1>
+        <hr>
+      </div>
+    </div>
+    <div class="blog-area">
+      <div class="row"> <div class="col-md-3 col-sm-6 col-xs-6 blog-post">
+          <h4 class="orange iblog-date"><i class="fa fa-calendar"></i> &nbsp;2018-01-06</h4>
+          <h2 class="iblog-title"><a href="../a/shishangzixun/19.html" title="出街优雅范，水桶包凹出新时尚！" >出街优雅范，水桶包凹出新时尚！</a></h2>
+          <div class="blog-img"> <img class="img-responsive" src="../uploads/180106/1-1P106092610N0.jpg" style="width: 300px;height: 300px;" alt="出街优雅范，水桶包凹出新时尚！"/>
+            <div class="blog-img-hover text-center"><a class="btn btn-orange" href="../a/shishangzixun/19.html">阅读更多</a></div>
+          </div>
+          <p class="desc">外形酷似水桶的手提水桶包，这个身材圆润又不失俏皮的设计自出身就成为了包包的经典，在今年的春夏季的时装周都能见到...</p>
+          <div class="clearfix"></div>
+        </div>
+<div class="col-md-3 col-sm-6 col-xs-6 blog-post">
+          <h4 class="orange iblog-date"><i class="fa fa-calendar"></i> &nbsp;2018-01-06</h4>
+          <h2 class="iblog-title"><a href="../a/shishangzixun/20.html" title="醉人酒红，高贵大气">醉人酒红，高贵大气</a></h2>
+          <div class="blog-img"> <img class="img-responsive" src="../uploads/180106/1-1P106092551296.jpg" style="width: 259px;height: 300px;" alt="醉人酒红，高贵大气"/>
+            <div class="blog-img-hover text-center"><a class="btn btn-orange" href="../a/shishangzixun/20.html">阅读更多</a></div>
+          </div>
+          <p class="desc">国际权威色彩机构Pantone在2014年底公布玛萨拉酒红（Marsala）为2015年年度代表色。Marsala是一种色调偏暗、带一点点泥土色调的...</p>
+          <div class="clearfix"></div>
+        </div>
+<div class="col-md-3 col-sm-6 col-xs-6 blog-post">
+          <h4 class="orange iblog-date"><i class="fa fa-calendar"></i> &nbsp;2018-01-06</h4>
+          <h2 class="iblog-title"><a href="../a/shishangzixun/21.html" title="值得拥有的4大包款！">值得拥有的4大包款！</a></h2>
+          <div class="blog-img"> <img class="img-responsive" src="../uploads/180106/1-1P106092532517.jpg" style="width: 260px;height: 300px;" alt="值得拥有的4大包款！"/>
+            <div class="blog-img-hover text-center"><a class="btn btn-orange" href="../a/shishangzixun/21.html">阅读更多</a></div>
+          </div>
+          <p class="desc">水桶包是因为外形酷似水桶而得名，自从1932年LouisVuitton推出的第一款水桶包Noe，这个身材圆润又不失俏皮的设计就成为包包...</p>
+          <div class="clearfix"></div>
+        </div>
+<div class="col-md-3 col-sm-6 col-xs-6 blog-post">
+          <h4 class="orange iblog-date"><i class="fa fa-calendar"></i> &nbsp;2018-01-06</h4>
+          <h2 class="iblog-title"><a href="../a/shishangzixun/22.html" title="走进绘画世界，色彩与情感碰撞">走进绘画世界，色彩与情感碰撞</a></h2>
+          <div class="blog-img"> <img class="img-responsive" src="../uploads/180106/1-1P10609251DY.jpg" style="width: 260px;height: 300px;" alt="走进绘画世界，色彩与情感碰撞"/>
+            <div class="blog-img-hover text-center"><a class="btn btn-orange" href="../a/shishangzixun/22.html">阅读更多</a></div>
+          </div>
+          <p class="desc">艺术与时尚有着说不清的关系，阿玛尼老爷子也从印象画派偷点色彩。印象中，阿玛尼老爷子钟情于夜幕下的色彩，经典大方...</p>
+          <div class="clearfix"></div>
+        </div>
+ </div>
+    </div>
+  </div>
+</section>
+<footer class="wow fadeIn footer" id="footer-sec">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 charity foot-about">
+        <h2 class="dark-title"><a href="../a/gongsijianjie/index.html">关于我们</a> </h2>
+        <div class="fabout-text">
+          <p> 某某品牌是广东赞赞服饰有限公司推广的品牌，由艺术家Nancy和意大利知名设计师Luice共创的快速时尚品牌。在皮具服饰行业率先推行崭新的快速时尚概念。 我们一直致力于倡导新的时尚观和消费理念，某某品牌所提供的是大众可轻松拥有的高品质时尚产品。潮流前沿、稀有数量、优秀品质、独特品位，使... </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 about-us foot-nav">
+        <h2>快速链接</h2>
+        <ul class="list-unstyled f-nav">
+          <li><a href="../a/index.html"><i class="fa fa-caret-right"></i> &nbsp;网站首页</a></li>
+          
+          <li><a href="../a/gongsijianjie/index.html"><i class="fa fa-caret-right"></i> &nbsp;关于我们</a></li>
+          
+          <li><a href="../a/chanpinxilie/index.html"><i class="fa fa-caret-right"></i> &nbsp;产品系列</a></li>
+          
+          <li><a href="../a/dianpuxingxiang/xingxiangdian/index.html"><i class="fa fa-caret-right"></i> &nbsp;店铺形象</a></li>
+          
+          <li><a href="../a/shishangzixun/index.html"><i class="fa fa-caret-right"></i> &nbsp;时尚资讯</a></li>
+          
+          <li><a href="../a/zhaoshangjiameng/jiamengxize/index.html"><i class="fa fa-caret-right"></i> &nbsp;招商加盟</a></li>
+          
+          <li><a href="../a/lianxiwomen/index.html"><i class="fa fa-caret-right"></i> &nbsp;联系我们</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 contact foot-contact">
+        <h2 class="dark-title"><a href="../contactus.html">联系信息</a></h2>
+        <div class="contact-details"> <span><i class="fa fa-map-marker white"></i></span>
+          <p> 地址： </p>
+          <span><i class="fa fa-phone white"></i></span>
+          <p> 电话： </p>
+          <span><small><i class="fa fa-envelope white"></i></small></span>
+          <p> 传真： </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 charity foot-qrcode">
+        <h2>扫描二维码</h2>
+        <div class="f-qrcode"> <img src="../skin/images/qrcode.png" /> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>Copyright &copy; 2004-2011 DEDECMS. 织梦科技 版权所有 <span class="copy-support" style="z-index:100;display:none;"> &nbsp;|&nbsp; 技术支持 <i class="fa fa-heart orange"></i> <a href="http://www.dede58.com/" target="_blank">织梦58</a></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../skin/js/jquery.themepunch.revolution.js" type="text/javascript"></script>
+<script src="../skin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+<script src="../skin/js/owl.carousel.js"></script>
+<script src="../skin/js/jquery.mixitup.js"></script>
+<script src="../skin/js/featherlight.js"></script>
+<script src="../skin/js/isotope.pkgd.min.js"></script>
+<!--<script src="../skin/js/bootstrap-select.min.js"></script>-->
+<script src="../skin/js/bootstrap-hover-dropdown.min.js"></script>
+<script src="../skin/js/wow.js"></script>
+<script src="../skin/js/custom.js"></script>
+<nav id="mmenu" class="noDis">
+  <div class="mmDiv">
+    <div class="MMhead"> <a href="#mm-0" class="closemenu noblock">X</a> <a href="" target="_blank" class="noblock"><i class="fa fa-weibo"></i></a> <a href="" target="_blank" class="noblock"><i class="fa fa-tencent-weibo"></i></a> <!--<a href="" target="_blank" class="noblock">English</a>--> </div>
+    <div class="mm-search">
+      <form  class="mm-search-form" name="formsearch" action="#">
+        <input type="hidden" name="kwtype" value="0" />
+        <input type="text" autocomplete="off" value="" name="q" class="side-mm-keyword" placeholder="输入关键字..."/>
+      </form>
+    </div>
+    <ul>
+      <li class="m-Lev1 m-nav_0"><a href="../a/index.html">网站首页</a></li>
+      <li class="m-Lev1 m-nav_4"> <a href="../a/gongsijianjie/index.html" class="m-menu1">关于我们</a>
+        <ul class="m-submenu">
+          
+          <li class="Lev2"> <a href="../a/gongsijianjie/index.html" class="m-menu2">公司简介</a> </li>
+          
+          <li class="Lev2"> <a href="../a/pinpaiqiyuan/index.html" class="m-menu2">品牌起源</a> </li>
+          
+          <li class="Lev2"> <a href="../a/rongyuzizhi/index.html" class="m-menu2">荣誉资质</a> </li>
+          
+        </ul>
+      </li><li class="m-Lev1 m-nav_4"> <a href="../a/chanpinxilie/index.html" class="m-menu1">产品系列</a>
+        <ul class="m-submenu">
+          
+          <li class="Lev2"> <a href="../a/chanpinxilie/fenleiyi/index.html" class="m-menu2">手袋系列</a> </li>
+          
+          <li class="Lev2"> <a href="../a/chanpinxilie/fenleier/index.html" class="m-menu2">钱夹系列</a> </li>
+          
+          <li class="Lev2"> <a href="../a/chanpinxilie/fenleisan/index.html" class="m-menu2">配饰系列</a> </li>
+          
+        </ul>
+      </li><li class="m-Lev1 m-nav_4"> <a href="../a/dianpuxingxiang/xingxiangdian/" class="m-menu1">店铺形象</a>
+        <ul class="m-submenu">
+          
+          <li class="Lev2"> <a href="../a/dianpuxingxiang/xingxiangdian/index.html" class="m-menu2">形象店</a> </li>
+          
+          <li class="Lev2"> <a href="../a/dianpuxingxiang/dianpuwangluo/index.html" class="m-menu2">店铺网络</a> </li>
+          
+        </ul>
+      </li><li class="m-Lev1 m-nav_4"> <a href="../a/shishangzixun/index.html" class="m-menu1">时尚资讯</a>
+        <ul class="m-submenu">
+          
+        </ul>
+      </li><li class="m-Lev1 m-nav_4"> <a href="../a/zhaoshangjiameng/jiamengxize/index.html" class="m-menu1">招商加盟</a>
+        <ul class="m-submenu">
+          
+          <li class="Lev2"> <a href="../a/jiamengxize/index.html" class="m-menu2">加盟细则</a> </li>
+          
+          <li class="Lev2"> <a href="../a/jiamengliucheng/index.html" class="m-menu2">加盟流程</a> </li>
+          
+          <li class="Lev2"> <a href="../a/huibaoyoushi/index.html" class="m-menu2">回报优势</a> </li>
+          
+        </ul>
+      </li><li class="m-Lev1 m-nav_4"> <a href="../a/lianxiwomen/index.html" class="m-menu1">联系我们</a>
+        <ul class="m-submenu">
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<link type="text/css" rel="stylesheet" href="../skin/css/jquery.mmenu.all.css" />
+<script type="text/javascript" src="../skin/js/jquery.mmenu.all.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	var mmenu=$('nav#mmenu').mmenu({
+		slidingSubmenus: true,
+		classes		: 'mm-white', //mm-fullscreen mm-light
+		extensions	: [ "theme-white" ],
+		offCanvas	: {
+			position: "right", //left, top, right, bottom
+			zposition: "front" //back, front,next
+			//modal		: true
+		},
+		searchfield		: false,
+		counters		: false,
+		//navbars		: {
+			//content : [ "prev", "title", "next" ]
+		//},
+		navbar 		: {
+			title : "网站导航"
+		},
+		header			: {
+			add		: true,
+			update	: true,
+			title	: "网站导航"
+		}
+	});
+	$(".closemenu").click(function() {
+		var mmenuAPI = $("#mmenu").data( "mmenu" );
+		mmenuAPI.close();
+	});
+});
+</script>
+</body>
+</html>
