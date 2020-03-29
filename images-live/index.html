@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Slider</title>
+
+    <style>
+
+        #indexline{
+
+            width:650px;
+
+            margin: 0 auto;
+
+            position: relative;
+
+            overflow:hidden;
+
+        }
+
+        #content_main{
+
+            width: 2600px;
+
+            white-space:nowrap;
+
+            position: relative;
+
+            overflow:hidden;
+
+        }
+
+        #arrowsleft{
+
+            background: url("images/arrows-30.png")repeat-y;
+
+            height:80px;
+
+            width: 33px;
+
+            top:80px;
+
+            left:50px;
+
+            position: absolute;
+
+            overflow:hidden;
+
+            z-index: 2;
+
+        }
+
+        #arrowsright{
+
+            background: url("images/arrows-30.png")repeat-y;
+
+            background-position:-32px -80px;
+
+            height:80px;
+
+            width: 33px;
+
+            position: absolute;
+
+            top:80px;
+
+            right:50px;
+
+            overflow:hidden;
+
+            z-index: 2;
+
+        }
+
+        #img1,#img2,#img3{
+
+            width: 650px;
+
+            float: left;
+
+        }
+
+        .pointred1 {
+
+            background:url("大雨.png");
+
+            background-position:-12px -24px;
+
+            top:230px;
+
+            left:600px;
+
+            height:12px;
+
+            width:12px;
+
+            overflow:hidden;
+
+            position:absolute;
+
+            z-index: 4;
+
+        }
+
+        .pointred2 {
+
+            background:url("大雨.png");
+
+            background-position:-12px -24px;
+
+            top:230px;
+
+            left:615px;
+
+            height:12px;
+
+            width:12px;
+
+            overflow:hidden;
+
+            position:absolute;
+
+            z-index: 4;
+
+        }
+
+        .pointred3 {
+
+            background:url("大雨.png");
+
+            background-position:-12px -24px;
+
+            top:230px;
+
+            left:630px;
+
+            height:12px;
+
+            width:12px;
+
+            overflow:hidden;
+
+            position:absolute;
+
+            z-index: 4;
+
+        }
+
+        .point1 {
+
+            background:url("大雨.png");
+
+            top:230px;
+
+            left:600px;
+
+            height:12px;
+
+            width:12px;
+
+            overflow:hidden;
+
+            position:absolute;
+
+        }
+
+        .point2 {
+
+            background:url("大雨.png");
+
+            top:230px;
+
+            left:615px;
+
+            height:12px;
+
+            width:12px;
+
+            overflow:hidden;
+
+            position:absolute;
+
+        }
+
+        .point3 {
+
+            background:url("大雨.png");
+
+            top:230px;
+
+            left:630px;
+
+            height:12px;
+
+            width:12px;
+
+            overflow:hidden;
+
+            position:absolute;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="indexline">
+
+    <div id="content_main">
+
+        <img src="1.jpg" id="img1">
+
+        <img src="favicon.ico" id="img2">
+
+        <img src="大雨.png" id="img3">
+
+        <img src="1.jpg" id="img1">
+
+    </div>
+
+</div>
+
+<div id="arrowsleft"></div>
+
+<div id="arrowsright"></div>
+
+<div id="point1" class="point1">
+
+</div>
+
+<div id="point2" class="point2">
+
+</div>
+
+<div id="point3" class="point3">
+
+</div>
+
+<!-- indexline end -->
+
+</body>
+
+
+
+<script language="JavaScript" type="text/javascript">
+
+    var judge=1;
+
+    document.getElementById("arrowsleft").style.visibility="hidden";
+
+    document.getElementById("arrowsright").style.visibility="hidden";
+
+    function test() {
+
+        if(document.getElementById("indexline").scrollLeft>=1950){
+
+            document.getElementById("indexline").scrollLeft=0;
+
+        }
+
+        choose();
+
+        document.getElementById("indexline").scrollLeft++;
+
+        if(document.getElementById("indexline").scrollLeft%650==0&&judge==1){
+
+            window.setTimeout(test, 1000);
+
+        }
+
+        else if(judge==0){
+
+            document.getElementById("indexline").scrollLeft--;
+
+            window.setTimeout(test, 1);
+
+        }
+
+        else {
+
+            window.setTimeout(test, 1);
+
+        }
+
+    }
+
+    var run = setTimeout(test,10);
+
+    var a1 = document.getElementById("arrowsleft");
+
+    var a2 = document.getElementById("arrowsright");
+
+    var p1 = document.getElementById("point1");
+
+    var p2 = document.getElementById("point2");
+
+    var p3 = document.getElementById("point3");
+
+    var b1 = document.getElementById("indexline");
+
+    function choose(pos){
+
+        if(b1.scrollLeft==0){
+
+            p1.classList.remove("point1");
+
+            p1.classList.add("pointred1");
+
+            p2.classList.remove("pointred2");
+
+            p2.classList.add("point2");
+
+            p3.classList.remove("pointred3");
+
+            p3.classList.add("point3");
+
+        }
+
+        else if(b1.scrollLeft==650){
+
+            p2.classList.remove("point2");
+
+            p2.classList.add("pointred2");
+
+            p1.classList.remove("pointred1");
+
+            p1.classList.add("point1");
+
+            p3.classList.remove("pointred3");
+
+            p3.classList.add("point3");
+
+        }
+
+        else if(b1.scrollLeft==1300){
+
+            p3.classList.remove("point3");
+
+            p3.classList.add("pointred3");
+
+            p1.classList.remove("pointred1");
+
+            p1.classList.add("point1");
+
+            p2.classList.remove("pointred2");
+
+            p2.classList.add("point2");
+
+        }
+
+    }
+
+
+
+    var img1=document.getElementById("img1");
+
+    var img2=document.getElementById("img2");
+
+    var img3=document.getElementById("img3");
+
+    var hander = function (event) {
+
+        switch (event.type) {
+
+            case "mouseover":
+
+                judge=0;
+
+                a1.style.visibility="visible";
+
+                a2.style.visibility="visible";
+
+                break;
+
+            case "mouseout":
+
+                judge=1;
+
+                a1.style.visibility="hidden";
+
+                a2.style.visibility="hidden";
+
+                break;
+
+        }
+
+    };
+
+    a1.οnclick=function(){ //对左箭头进行点击
+
+        var x = document.getElementById("indexline").scrollLeft;
+
+        if(x>0&&x<=650){
+
+            document.getElementById("indexline").scrollLeft=0;
+
+        }
+
+        else if(x==0){
+
+            document.getElementById("indexline").scrollLeft=1300;
+
+        }
+
+        else if(x>650&&x<=1300){
+
+            document.getElementById("indexline").scrollLeft=650;
+
+        }
+
+        else if(x>1300&&x<=1950){
+
+            document.getElementById("indexline").scrollLeft=1300;
+
+        }
+
+        else if(x>1950){
+
+            document.getElementById("indexline").scrollLeft=1950;
+
+        }
+
+    };
+
+    a2.οnclick=function (){
+
+        var x = document.getElementById("indexline").scrollLeft;
+
+        if(x>=0&&x<650){
+
+            document.getElementById("indexline").scrollLeft=650;
+
+        }
+
+        else if(x>=650&&x<1300){
+
+            document.getElementById("indexline").scrollLeft=1300;
+
+        }
+
+        else if(x>=1300&&x<1950){
+
+            document.getElementById("indexline").scrollLeft=1950;
+
+        }
+
+        else if(x>=1950){
+
+            document.getElementById("indexline").scrollLeft=0;
+
+        }
+
+
+
+    };
+
+    p1.οnclick=function(){
+
+        document.getElementById("indexline").scrollLeft=0;
+
+    }
+
+    p2.οnclick=function(){
+
+        document.getElementById("indexline").scrollLeft=650;
+
+    }
+
+    p3.οnclick=function(){
+
+        document.getElementById("indexline").scrollLeft=1300;
+
+    }
+
+    b1.οnmοuseοver=hander;
+
+    b1.οnmοuseοut=hander;
+
+    a1.οnmοuseοver=hander;
+
+    a1.οnmοuseοut=hander;
+
+    a2.οnmοuseοver=hander;
+
+    a2.οnmοuseοut=hander;
+
+    p1.οnmοuseοver=hander;
+
+    p1.οnmοuseοut=hander;
+
+    p2.οnmοuseοver=hander;
+
+    p2.οnmοuseοut=hander;
+
+    p3.οnmοuseοver=hander;
+
+    p3.οnmοuseοut=hander;
+
+    img1.οnmοuseοver=hander;
+
+    img1.οnmοuseοut=hander;
+
+    img2.οnmοuseοver=hander;
+
+    img2.οnmοuseοut=hander;
+
+    img3.οnmοuseοver=hander;
+
+    img3.οnmοuseοut=hander;
+
+
+
+</script>
+
+
+
+</html>
