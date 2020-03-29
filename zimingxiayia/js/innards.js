@@ -44,6 +44,7 @@
 														{image : 'img/6.jpg', title : 'Image', thumb : 'img/6.jpg'},
 														{image : 'img/7.jpg', title : 'Image', thumb : 'img/7.jpg'},
 														{image : 'img/8.jpg', title : 'Image', thumb : 'img/8.jpg'},
+														{image : 'img/10.jpg', title : 'Image', thumb : 'img/10.jpg'},
 												],
 												
 					// Theme Options			   
